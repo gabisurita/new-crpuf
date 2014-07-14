@@ -32,7 +32,7 @@ echo "Cleaning..."
 make vsim-clean 
 
 # Create Challanges and Delay
-python scripts/delaygen.py -d 'data/RPUF_delays/atrasos_RPUF_'$XORi'x'$XORj'_'$Devices'_pufs_.txt'  -c 'data/Challenges/desafios_'$VectorSize'_C_'$VectorWidth'_bits.txt' -i $XORi -j $XORj -n $Devices -v $VectorSize
+#xpython scripts/delaygen.py -d 'data/RPUF_delays/atrasos_RPUF_'$XORi'x'$XORj'_'$Devices'_pufs_.txt'  -c 'data/Challenges/desafios_'$VectorSize'_C_'$VectorWidth'_bits.txt' -i $XORi -j $XORj -n $Devices -v $VectorSize
 
 echo "Seed Parameters..."
 # Seed Paramaters all around the platform

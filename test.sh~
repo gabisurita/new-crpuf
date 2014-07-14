@@ -13,13 +13,13 @@
 SimInstallDir="\/root\/altera\/13.0sp1\/modelsim_ase\/bin"
 
 # PUF Parameters	
-XORi="5"
-XORj="5"
+XORi="3"
+XORj="3"
 
 # Test Parameters
-VectorWidth="10"	 # 2x XORi
-VectorSize="32"
-Devices="100"
+VectorWidth="6"	 # 2x XORi
+VectorSize="16"
+Devices="1000"
 TimeBase="100"
 
 
@@ -32,7 +32,7 @@ echo "Cleaning..."
 make vsim-clean 
 
 # Create Challanges and Delay
-python scripts/delaygen.py -d 'data/RPUF_delays/atrasos_RPUF_'$XORi'x'$XORj'_'$Devices'_pufs_.txt'  -c 'data/Challenges/desafios_'$VectorSize'_C_'$VectorWidth'_bits.txt' -i $XORi -j $XORj -n $Devices -v $VectorSize
+#python scripts/delaygen.py -d 'data/RPUF_delays/atrasos_RPUF_'$XORi'x'$XORj'_'$Devices'_pufs_.txt'  -c 'data/Challenges/desafios_'$VectorSize'_C_'$VectorWidth'_bits.txt' -i $XORi -j $XORj -n $Devices -v $VectorSize
 
 echo "Seed Parameters..."
 # Seed Paramaters all around the platform
