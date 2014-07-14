@@ -1,0 +1,18 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+PACKAGE resources IS
+
+ constant base_tempo :    time:= TIME_BASE_GLOBAL ns ;--500; --individuos
+
+ constant matriz_i	 : natural := MATRIZ_I_GLOBAL ; -- linhas (impar)
+ constant matriz_j	 : natural := MATRIZ_J_GLOBAL ; -- colunas
+ 
+ constant number_of_vector:    integer:= VECTOR_SIZE_GLOBAL ;--500; --quantidade de estimulos
+ constant individuos:				   integer:= DEVICES_GLOBAL ;--500; --individuos
+ 
+ constant response_file_rpuf1:  string  := "./data/PUF_Response/CRPUF1_response_PUF_"&integer'image(matriz_i)&"x"&integer'image(matriz_j)&"_bits_"&integer'image(individuos)&"_pufs.txt";
+ constant response_file_rpuf2:  string  := "./data/PUF_Response/CRPUF2_response_PUF_"&integer'image(matriz_i)&"x"&integer'image(matriz_j)&"_bits_"&integer'image(individuos)&"_pufs.txt"; 
+ constant response_file_raw:	  string  := "./data/PUF_Response/RAW_response_PUF_"&integer'image(matriz_i)&"x"&integer'image(matriz_j)&"_bits_"&integer'image(individuos)&"_pufs.txt"; 
+ 
+END resources;

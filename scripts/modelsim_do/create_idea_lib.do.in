@@ -1,0 +1,6 @@
+
+# Create Idea! lib
+
+ VSIM_DIR/vlib 					./lib/idea
+ VSIM_DIR/vmap      idea ./lib/idea
+

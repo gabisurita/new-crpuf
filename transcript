@@ -1,0 +1,13 @@
+# vsim -do {run -all; exit;} -c -t fs work.simulate 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading work.txt_util(body)
+# Loading work.resources
+# Loading work.std_logic_arith(body)
+# Loading work.simulate(simulate_arch)
+# run -all 
+# Running and reading file
+########    Finish simulation at 1600000 ns
+#  exit 

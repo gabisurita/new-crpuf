@@ -1,0 +1,7 @@
+# -c   for command line mode
+# -t   for Time resolution limit
+# -do "<command>"  to execute <command> on startup; Can also be a text file
+
+
+VSIM_DIR/vsim -c -t fs work.simulate -do "run -all; exit;"
+
